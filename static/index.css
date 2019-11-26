@@ -1,0 +1,251 @@
+﻿#main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/*Styles for sidebar STARTS here ----->>>>>*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100%;
+    background-image: url("../image/background.jpg");
+    background-clip: border-box;
+    background-size: cover;
+}
+
+.sidebar::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+#sidebar-logo {
+    width: 100px;
+    border-color: #c0c0c0;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 60%;
+}
+
+#sidebar-brief {
+    text-align: center;
+    margin: 2em auto;
+}
+
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('//at.alicdn.com/t/webfont_awd4jxi8ovw.woff') format('woff'),
+    url('//at.alicdn.com/t/webfont_awd4jxi8ovw.ttf') format('truetype'),
+    url('//at.alicdn.com/t/webfont_awd4jxi8ovw.svg#杨任东竹石体-Bold') format('svg');
+}
+
+
+#sidebar-brief h2 {
+    font-family: Lobster, monospace;
+    font-size: 3em;
+    color: #8b4513;
+}
+
+#sidebar-brief h3 {
+    font-family: "webfont", serif !important;
+    font-size: 3em;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #a52a2a;
+}
+
+#sidebar-brief p {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 1.2em;
+    color: #ffefd5;
+}
+
+#sidebar-links {
+    margin: 3em 0 1em 0;
+    text-align: center;
+    align-content: center;
+}
+
+#sidebar-links li {
+    padding: 0.5em;
+    font-family: "Cambria", "Georgia", serif;
+}
+
+#sidebar-links a {
+    text-decoration: none;
+    color: #ffefd5;
+}
+
+
+#sidebar-links .iconfont {
+    font-family: "Arial", sans-serif;
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+#sidebar-links ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 0;
+}
+
+/*<<<<<----- Styles for sidebar ENDS here */
+
+
+/*Styles for content STARTS here ----->>>>>*/
+#contents {
+    position: absolute;
+    left: 360px;
+    top: 0;
+    width: auto;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.float-column {
+    margin: 0 100px;
+    max-width: 1360px;
+}
+
+.headline {
+    margin: auto 40px;
+    border-bottom: 3px solid #ffa07a;
+}
+
+.headline a {
+    text-decoration: none;
+}
+
+.headline h2 {
+
+    color: #a52a2a;
+    font-family: "Cambria", "Georgia", serif;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.headline-dateloc {
+    color: #5f9ea0;
+    font-family: "Cambria", "Georgia", serif;
+    font-size: 1em;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.headline-preview {
+    color: #666666;
+    font-family: 'Noto Sans SC', "Calibri", "Arial", sans-serif;
+    font-size: 1.2em;
+}
+
+
+.headline-link {
+    text-decoration: none;
+    font-family: "Cambria", "Georgia", serif;
+    font-style: italic;
+    color: #fa8072;
+    font-size: 1.2em;
+}
+
+
+.headline-image {
+    width: 100%;
+    height: auto;
+}
+
+
+#articles {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+}
+
+#articles a {
+    text-decoration: none;
+}
+
+#article-list {
+    list-style: none;
+    padding: 0 40px;
+}
+
+#article-list li {
+    display: inline-block;
+    width: 100%;
+}
+
+.article-entry {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ffa07a;
+}
+
+.cover-block {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+}
+
+.cover-img {
+    font-size: 2em;
+    color: #fa8072;
+    width: 85%;
+    height: 85%;
+}
+
+.preview-block {
+    display: inline-block;
+    width: 60%;
+}
+
+.article-title {
+    color: #a52a2a;
+    font-family: "Cambria", "Georgia", serif;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.article-dateloc {
+    color: #c0c0c0;
+    font-family: "Cambria", "Georgia", serif;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.article-preview {
+    color: #666666;
+    font-family: 'Noto Sans SC', "Calibri", "Arial", sans-serif;
+    font-size: 1em;
+}
+
+.article-link {
+    text-decoration: none;
+    font-family: "Cambria", "Georgia", serif;
+    font-style: italic;
+    color: #fa8072;
+}
+
+/*<<<<<----- Styles for content ENDS here */

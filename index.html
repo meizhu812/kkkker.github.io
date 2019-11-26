@@ -1,132 +1,138 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-  <link href="//at.alicdn.com/t/font_1521534_koh3z53o5ka.css" rel="stylesheet"/>
-  <style>
-    #ourblog {
-      position: fixed;
-      /*position:absolute;*/
-      top: 0%;
-      left: 0px;
-      width: 30%;
-      height: 100%;
-    }
-
-    #ourblog-brief {
-      /*position:absolute;*/
-      font-family: Lobster;
-      font-size: 20px;
-      color: beige;
-      text-align: center;
-    }
-
-    #title {
-      position: fixed;
-      /*position:absolute;*/
-      top: 0px;
-      left: 0px;
-      z-index: 1;
-    }
-
-    #content {
-      position: absolute;
-      left: 30%;
-      top: 0%;
-      width: 70%;
-      height: 100%;
-      /*margin:10px 10px 10px 10px;*/
-      z-index: 2;
-      background-color: white;
-    }
-
-    .red-text {
-      color: bisque;
-      font-size: 32px;
-      font-family: Lobster, monospace;
-
-    }
-
-    .thick-green-border {
-      border-color: silver;
-      border-width: 5px;
-      border-style: solid;
-      border-radius: 60%;
-    }
-
-    .smaller-image {
-      width: 100px;
-    }
-
-
-    #sidebar-links {
-      padding: 5em;
-    }
-
-    #sidebar-links li {
-      padding: 0.5em;
-    }
-
-    #sidebar-links a {
-      text-decoration: none;
-      color: bisque;
-    }
-
-
-    #sidebar-links .plain-list {
-      list-style: none;
-    }
-
-
-    #sidebar-links .iconfont {
-      font-size: 1rem;
-    }
-
-    #sidebar-links .column2 {
-      column-count: 2;
-    }
-  </style>
+  <meta content="text/html" charset=utf-8>
   <title>Our Blog</title>
+  <link href="./static/index.css" rel="stylesheet"/>
+  <link href="./static/index-small.css" rel="stylesheet"/>
+  <link href="//at.alicdn.com/t/font_1521534_pnls3ch80x.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="title">
-  <img src="./image/cover.jpg">
-  <div id="ourblog">
-    <div id="ourblog-brief">
-      <h2 class="red-text">OurBlog</h2>
-      <a href="#"><img class="smaller-image thick-green-border"
-                       src="https://upload-images.jianshu.io/upload_images/15168659-a3c3f2b96b600e0a.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
-                       alt="一只仰卧着的萌猫"></a>
-      <p>蚂蚁花甲拉面</p>
-      <p style="font-size:15px;">我们的成员：马铭骏，梅竹，金潓</p>
+<div id="main">
+  <div class="sidebar">
+    <div id="sidebar-brief">
+      <h2>OurBlog</h2>
+      <a href="./content/action-self.html">
+        <img id="sidebar-logo" src="image/team-logo.png" alt="头像">
+      </a>
+      <h3>蚂蚁花甲拉面</h3>
+      <p>我们的成员：马铭骏，梅竹，金潓</p>
     </div>
     <div id="sidebar-links">
-      <div id="blog-links">
-        <ul class="column2 plain-list web-font">
-          <li><a class="iconfont icon-home " href="#">Home</a></li>
-          <li><a class="iconfont icon-star" href="#">Favourite</a></li>
-          <li><a class="iconfont icon-tags" href="#">Tags</a></li>
-          <li><a class="iconfont icon-group" href="#">Archive</a></li>
-          <li><a class="iconfont icon-search" href="#">Search</a></li>
-          <li><a class="iconfont icon-question-circle" href="#">About</a></li>
-        </ul>
+      <ul>
+        <li><a href="./index.html"><i class="iconfont icon-home"></i>
+          <span>Home</span></a></li>
+        <li><a href="https://github.com/kkkker/kkkker.github.io/tree/master/materials"><i class="iconfont icon-tags"></i>
+          <span>Tags</span></a></li>
+        <li><a href="https://bing.com" target="_black"><i class="iconfont icon-search"></i>
+          <span>Search</span></a></li>
+      </ul>
+      <ul>
+        <li><a href="https://bing.com" target="_black"><i class="iconfont icon-star"></i>
+          <span>Favourite</span></a></li>
+        <li><a href="./content/timeline.html" target="_black"><i class="iconfont icon-group"></i>
+          <span>Archive</span></a></li>
+        <li><a href="./content/action-self.html"><i class="iconfont icon-question-circle"></i>
+          <span>About</span></a></li>
+      </ul>
+      <ul class="column2 plain-list web-font">
+        <li><a href="mailto:arc@sample.com"><i class="iconfont icon-mail-fill"></i>
+          <span>E-Mail</span></a></li>
+        <li><a href="https://www.wechat.com" target="_black"><i class="iconfont icon-wechat-fill"></i>
+          <span>Wechat</span></a></li>
+      </ul>
+      <ul class="column2 plain-list web-font">
+        <li><a href="https://weibo.com" target="_black"><i class="iconfont icon-weibo"></i>
+          <span>Weibo</span></a></li>
+        <li><a href="https://github.com/kkkker/kkkker.github.io" target="_black"><i class="iconfont icon-github-fill"></i>
+          <span>GitHub</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="contents">
+    <div class="float-column">
+      <div class="headline">
+        <div>
+          <a href="./content/headline.html">
+            <h2>The first article</h2>
+          </a>
+          <p class="headline-dateloc">2019.11.24 in Chengdu</p>
+          <p class="headline-preview">
+            This is our headline article for video playback demonstration<br>
+            Please click the title above or link below to view our test article page.<br>
+            Alternatively you can also click on the headline poster ;)
+          </p>
+          <a class="headline-link" href="./content/headline.html">Continue reading</a>
+        </div>
+        <div>
+          <a href="./content/headline.html">
+            <img class="headline-image" src="./image/article-header.jpg" alt="头条文章背景图">
+          </a>
+        </div>
       </div>
-      <br>
-      <div id="contacts">
-        <ul class="column2 plain-list web-font">
-          <li><a class="iconfont icon-mail-fill" href="#">E-Mail</a></li>
-          <li><a class="iconfont icon-QQ" href="#">QQ</a></li>
-          <li><a class="iconfont icon-weibo" href="#">Weibo</a></li>
-          <li><a class="iconfont icon-wechat-fill" href="#">Wechat</a></li>
-          <li><a class="iconfont icon-github-fill" href="#">GitHub</a></li>
+      <div id="articles">
+        <ul id="article-list">
+          <li>
+            <div class="article-entry">
+              <div class="cover-block">
+                <a href="https://www.jianshu.com/u/e57f1358f33b" target="_black">
+                  <img class="cover-img" src="image/article-01-cover.jpg" alt="Cover for Article A Missing"></a>
+              </div>
+              <div class="preview-block">
+                <a href="https://www.jianshu.com/u/e57f1358f33b" target="_black"><h2 class="article-title">Team Leader</h2></a>
+                <p class="article-dateloc">2019.11.21 in Chengdu</p>
+                <p class="article-preview">
+                  This is our team leader Ma MingJun.<br>
+                  His latest blog at Jianshu is:<br>
+                  《HTML中&lt;video&gt;用法》
+                </p>
+                <a href="https://www.jianshu.com/u/e57f1358f33b" target="_black" class="article-link">Continue Reading</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="article-entry">
+              <div class="cover-block">
+                <a href="https://www.jianshu.com/u/d7f174594d54" target="_black">
+                  <img class="cover-img" src="image/article-02-cover.jpg" alt="Cover for Article B"></a>
+              </div>
+
+              <div class="preview-block">
+                <a href="https://www.jianshu.com/u/d7f174594d54" target="_black"><h2 class="article-title">Team Member</h2></a>
+                <p class="article-dateloc">2019.11.22 in Chengdu</p>
+                <p class="article-preview">
+                  This is our team member Mei Zhu.<br>
+                  His latest blog at Jianshu is:<br>
+                  《background属性学习笔记》
+                </p>
+                <a href="https://www.jianshu.com/u/d7f174594d54" target="_black" class="article-link">Continue Reading</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="article-entry">
+              <div class="cover-block">
+                <a href="https://www.jianshu.com/u/5e2b7029891e" target="_black">
+                  <img class="cover-img" src="image/article-03-cover.jpg" target="_black" alt="Cover for Article C"></a>
+              </div>
+              <div class="preview-block">
+                <a href="https://www.jianshu.com/u/5e2b7029891e" target="_black"><h2 class="article-title">Team Member</h2></a>
+                <p class="article-dateloc">2019.11.23 in Chengdu</p>
+                <p class="article-preview">
+                  This is our team member Jin Hui.<br>
+                  Her latest blog at Jianshu is:<br>
+                  《程序员应该如何提问》
+                </p>
+                <a href="https://www.jianshu.com/u/5e2b7029891e" target="_black" class="article-link">Continue Reading</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
   </div>
-
-</div>
-
-<div id="content">
-  <p>content</p>
 </div>
 </body>
-
+</html>
