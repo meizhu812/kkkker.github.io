@@ -1,0 +1,101 @@
+@media (max-width: 1200px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    background-color: #ffffff22;
+  }
+
+  #sidebar-brief h2 {
+    font-family: Lobster, monospace;
+    font-size: 2em;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ae7980;
+  }
+
+  #sidebar-portrait {
+    width: 120px;
+    height: 120px;
+    margin: 100px auto;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("../image/portrait.jpg"), linear-gradient(0deg, #d39c7a, #445270);
+    background-blend-mode: lighten;
+    border-color: #76858f;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+  }
+
+  #sidebar-brief p {
+    font-family: 'Courier New', serif;
+    font-size: 1em;
+    background-image: linear-gradient(135deg, #e5aa81, #8aceee);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  #sidebar-links .iconfont {
+    font-family: "Arial", sans-serif;
+    font-size: 1.6em;
+    margin-right: 0.5em;
+  }
+
+  #whiteboard {
+    position: absolute;
+    left: 200px;
+    top: 0;
+    width: calc(100% - 200px);
+    background-color: #ffffff44;
+  }
+
+  #contents {
+    margin: 0 auto;
+    max-width: 568px;
+    background-color: #00000077;
+  }
+
+  .headline-image {
+    width: 100%;
+    height: 250px;
+    background-image: url("../image/InYourTwilight.jpg"), linear-gradient(135deg, #e5aa81, #8aceee);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .article-cover {
+    flex: 0 0 200px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .article-title {
+    color: #e5aa81;
+    font-family: "Cambria", "Georgia", serif;
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .article-preview {
+    line-height: 1.1em;
+    height: 4.4em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    background-image: linear-gradient(135deg, #e5aa81, #8aceee);
+    -webkit-background-clip: text;
+    color: #ffffff33;
+    font-family: 'Noto Sans SC', "Calibri", "Arial", sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin: 0;
+  }
+}

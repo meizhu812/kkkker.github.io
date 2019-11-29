@@ -35,7 +35,7 @@
 }
 
 
-#sidebar-logo {
+#sidebar-portrait {
     width: 100px;
     border-color: #c0c0c0;
     border-width: 5px;
@@ -114,7 +114,7 @@
 
 
 /*Styles for content STARTS here ----->>>>>*/
-#contents {
+#whiteboard {
     position: absolute;
     left: 360px;
     top: 0;
@@ -123,7 +123,7 @@
     background-color: #ffffff;
 }
 
-.float-column {
+.contents {
     margin: 0 100px;
     max-width: 1360px;
 }
@@ -145,7 +145,7 @@
     margin-bottom: 0;
 }
 
-.headline-dateloc {
+.headline-meta {
     color: #5f9ea0;
     font-family: "Cambria", "Georgia", serif;
     font-size: 1em;
@@ -175,23 +175,23 @@
 }
 
 
-#articles {
+#all-articles {
     background-color: #ffffff;
     border-color: #ffffff;
     margin-bottom: -10px;
     padding-bottom: 10px;
 }
 
-#articles a {
+#all-articles a {
     text-decoration: none;
 }
 
-#article-list {
+#all-articles {
     list-style: none;
     padding: 0 40px;
 }
 
-#article-list li {
+#all-articles li {
     display: inline-block;
     width: 100%;
 }
@@ -209,14 +209,14 @@
     width: 30%;
 }
 
-.cover-img {
+.article-cover {
     font-size: 2em;
     color: #fa8072;
     width: 85%;
     height: 85%;
 }
 
-.preview-block {
+.article-brief {
     display: inline-block;
     width: 60%;
 }
@@ -228,7 +228,7 @@
     margin-bottom: 0;
 }
 
-.article-dateloc {
+.article-meta {
     color: #c0c0c0;
     font-family: "Cambria", "Georgia", serif;
     font-size: 1em;

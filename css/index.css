@@ -1,0 +1,305 @@
+﻿@font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_awd4jxi8ovw.woff') format('woff'),
+  url('//at.alicdn.com/t/webfont_awd4jxi8ovw.ttf') format('truetype'),
+  url('//at.alicdn.com/t/webfont_awd4jxi8ovw.svg#杨任东竹石体-Bold') format('svg');
+}
+
+/*body {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  text-align: center;
+  background-color: #ffffff22;
+}
+
+#sidebar-brief {
+}
+
+#sidebar-brief h1 {
+  font-family: Lobster, monospace;
+  font-size: 3em;
+  color: #a5676c;
+}
+
+#sidebar-portrait {
+  width: 120px;
+  height: 120px;
+  margin: 120px auto;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("../image/portrait.jpg"), linear-gradient(0deg, #d39c7a, #445270);
+  background-blend-mode: lighten;
+  border-color: #76858f;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#sidebar-brief h2 {
+  font-family: Lobster, monospace;
+  font-size: 3em;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ae7980;
+}
+
+#sidebar-brief p {
+  font-family: 'Courier New', serif;
+  font-size: 1.2em;
+  background-image: linear-gradient(135deg, #e5aa81, #8aceee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#sidebar-links {
+  position: relative;
+  top: 2rem;
+  margin: auto 0;
+}
+
+#sidebar-links li {
+  padding: 0.5em;
+  font-family: Cambria, serif;
+}
+
+#sidebar-links a {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(135deg, #e5aa81, #8aceee);
+  -webkit-background-clip: text;
+  color: transparent;
+  /*color: #a5ad8e;*/
+}
+
+
+#sidebar-links .iconfont {
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+#sidebar-links ul {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding: 0;
+
+}
+
+#whiteboard {
+  position: absolute;
+  left: 400px;
+  top: 0;
+  width: calc(100% - 400px);
+  background-color: #ffffff44;
+}
+
+#contents {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #00000077;
+}
+
+#contents:hover {
+  background: #00000000;
+  transition: all 1000ms;
+}
+
+
+#wallpaper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/InYourTwilight.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.headline {
+  margin: auto 40px;
+  border-bottom: 2px solid #cbc4a3;
+}
+
+.headline:hover {
+  background: #00000077;
+  transition: all 250ms;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline h2 {
+
+  color: #fa8072;
+  font-family: "Cambria", "Georgia", serif;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.headline-meta {
+  color: #93b87d;
+  font-family: "Cambria", "Georgia", serif;
+  font-size: 1em;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.headline-preview {
+  font-family: 'Noto Sans SC', "Calibri", "Arial", sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.5em;
+  height: 4.5em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #e5aa81, #8aceee);
+  -webkit-background-clip: text;
+  color: #ffffff33;
+}
+
+.headline-preview::after {
+
+}
+
+
+.headline-link {
+  text-decoration: none;
+  font-family: "Cambria", "Georgia", serif;
+  font-style: italic;
+  color: #8aceee;
+  font-size: 1.2em;
+}
+
+.headline-image {
+  width: 100%;
+  height: 400px;
+  background-image: url("../image/InYourTwilight.jpg"), linear-gradient(135deg, #e5aa81, #8aceee);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#all-articles a {
+  text-decoration: none;
+}
+
+#all-articles ul {
+  list-style: none;
+  padding: 0 40px;
+}
+
+#all-articles li {
+  width: 100%;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #cbc4a3;
+  display: flex;
+  flex-direction: row;
+}
+
+#all-articles li:hover {
+  background: #00000077;
+  transition: all 500ms;
+}
+
+.article-cover {
+  flex: 0 0 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+#cover-1 {
+  background-image: url("../image/TheRoadLessTraveled.jpg");
+}
+
+#cover-2 {
+  background-image: url("../image/BluePlanet.jpg");
+}
+
+#cover-3 {
+  background-image: url("../image/ReImagine.jpg");
+}
+
+#cover-4 {
+  background-image: url("../image/YouCanNotReplay.jpg");
+  background-position: bottom;
+}
+
+.article-brief {
+  flex: 1 1 1px;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: inline-block;
+}
+
+.article-title {
+  color: #e5aa81;
+  font-family: "Cambria", "Georgia", serif;
+  font-size: 2em;
+  margin: 0;
+}
+
+.article-meta {
+  color: #ecf3d5;
+  font-family: "Cambria", "Georgia", serif;
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.article-preview {
+  line-height: 1.2em;
+  height: 4.8em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #e5aa81, #8aceee);
+  -webkit-background-clip: text;
+  color: #ffffff33;
+  font-family: 'Noto Sans SC', "Calibri", "Arial", sans-serif;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.article-link {
+  text-decoration: none;
+  font-family: "Cambria", "Georgia", serif;
+  font-style: italic;
+  color: #8aceee;
+}
+.banner {
+    position: fixed;
+    left:calc(50% - 60vmin);
+    top: calc(50% - 30vmin);
+    font-family: "Lucida Sans Typewriter", sans-serif;
+    font-weight: bold;
+    font-size: 8vmin;
+    color: rgba(255, 146, 0, 0.7);
+    text-align: center;
+    vertical-align: center;
+    transform: rotate(-45deg);
+    letter-spacing: 2vmin;
+    background: rgba(20, 1, 88, 0.31);
+    padding: 8vmin;
+}
