@@ -112,11 +112,11 @@
   margin: 0 auto;
   max-width: 800px;
   background-color: #00000077;
+  transition: all 1000ms;
 }
 
 #contents:hover {
   background: #00000000;
-  transition: all 1000ms;
 }
 
 
@@ -136,11 +136,11 @@
 .headline {
   margin: auto 40px;
   border-bottom: 2px solid #cbc4a3;
+  transition: all 250ms;
 }
 
 .headline:hover {
   background: #00000077;
-  transition: all 250ms;
 }
 
 .headline a {
@@ -216,11 +216,11 @@
   border-bottom: 1px solid #cbc4a3;
   display: flex;
   flex-direction: row;
+  transition: all 500ms;
 }
 
 #all-articles li:hover {
   background: #00000077;
-  transition: all 500ms;
 }
 
 .article-cover {
